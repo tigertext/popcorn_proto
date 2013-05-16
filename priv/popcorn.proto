@@ -1,8 +1,15 @@
 message Log_Message {
-    required string node       = 1;
-    required int32 severity    = 2;
-    required string message    = 3;
-    optional Log_Client client = 4;    
+    optional uint32 version      = 1;
+    required string node         = 2;
+    optional string node_role    = 3;
+    optional string node_version = 4;
+    required int32 severity      = 5;
+    required string message      = 6;
+    optional string module       = 7;
+    optional string function     = 8;
+    optional string line         = 9;
+    optional string pid          = 10;
+    optional Log_Client client   = 11;    
 }
 
 
@@ -11,5 +18,5 @@ message Log_Client {
     optional string type           = 2;
     optional string version        = 3;
     optional string os             = 4;
-    optional string os_version     = 5
+    optional string os_version     = 5;
 }
