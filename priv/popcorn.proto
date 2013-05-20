@@ -9,7 +9,7 @@ message Log_Message_Proto {
     optional string function     = 8;
     optional string line         = 9;
     optional string pid          = 10;
-    optional Log_Client client   = 11;    
+    optional Log_Client_Proto client   = 11;    
 }
 
 
