@@ -2,6 +2,6 @@
 %% -*- erlang -*-
 %%! -pa deps/protobuffs/ebin debug verbose  
 main(_) ->
-    protobuffs_compile:generate_source("./priv/popcorn.proto", [{output_include_dir, "./apps/generated/include"}, {output_src_dir, "./apps/generated/src"}]).
+    protobuffs_compile:generate_source("./priv/popcorn.proto", [{output_include_dir, "include"}, {output_src_dir, "src"}]).
 
 
