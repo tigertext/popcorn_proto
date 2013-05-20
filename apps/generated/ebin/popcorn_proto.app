@@ -1,6 +1,0 @@
-{application,popcorn_proto,
-             [{description,"protobuff files for popcorn"},
-              {vsn,"1.0"},
-              {applicatons,[kernel,stdlib]},
-              {modules,[popcorn_pb]},
-              {env,[]}]}.
