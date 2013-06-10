@@ -1,4 +1,4 @@
-message Log_Message {
+message Log_Message_Proto {
     optional uint32 version      = 1;
     required string node         = 2;
     optional string node_role    = 3;
@@ -9,11 +9,12 @@ message Log_Message {
     optional string function     = 8;
     optional string line         = 9;
     optional string pid          = 10;
-    optional Log_Client client   = 11;    
+    optional string timestamp    = 11;
+    optional Log_Client_Proto client   = 12;    
 }
 
 
-message Log_Client {
+message Log_Client_Proto {
     optional string account_token  = 1;
     optional string type           = 2;
     optional string version        = 3;
